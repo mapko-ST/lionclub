@@ -1,0 +1,409 @@
+/* Dégradé de fond animé */
+body {
+    /* Dégradé de fond linéaire */
+    background: linear-gradient(300deg, darkviolet, #040b49, #d84006, #680479);
+    background-size: 240% 240%;
+    /* Taille du dégradé */
+    animation: gradient-animation 20s ease infinite;
+    /* Animation du dégradé */
+    font-family: "Rubik", sans-serif;
+    /* Police de caractères */
+    font-weight: 300;
+    /* Poids de la police */
+    line-height: 1.5;
+    /* Hauteur de ligne */
+    height: -webkit-fill-available;
+    /* Hauteur de la page */
+    color: var(--color-white-100);
+    /* Couleur du texte */
+    max-width: 100vw;
+    /* Largeur maximale */
+}
+
+/* Animation du dégradé */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Alignement du texte dans les cellules de tableau */
+th {
+    text-align: left;
+    /* Alignement à gauche */
+    width: fit-content;
+    /* Ajustement à la taille du contenu */
+}
+
+/* Styles des titres */
+.titreligneresa {
+    text-align: left;
+    /* Alignement à gauche */
+    padding-bottom: 17px;
+    /* Espacement en bas */
+}
+
+.titrelignecontact {
+    text-align: left;
+    /* Alignement à gauche */
+    text-justify: center;
+    /* Justification du texte */
+    padding-bottom: 17px;
+    /* Espacement en bas */
+}
+
+/* Bloc parent de réservation et de contact */
+#mainblock {
+    padding-top: 120px;
+    /* Espacement en haut */
+    color: rgb(205, 170, 17);
+    /* Couleur du texte */
+    display: flex;
+    /* Affichage en ligne */
+    justify-content: space-around;
+    /* Répartition de l'espace autour des éléments */
+    margin: 1%;
+    /* Marge */
+}
+
+#resa {
+    background-color: rgba(253, 253, 253, 0.764);
+    /* Couleur de fond avec transparence */
+    border-style: groove;
+    /* Style de bordure */
+    width: center;
+    /* Largeur */
+    margin-top: 20px;
+    /* Marge en haut */
+}
+
+#textresa {
+    text-align: left;
+    /* Alignement à gauche */
+    font-size: small;
+    /* Taille de police */
+}
+
+#contact {
+    padding: 2%;
+    /* Espacement intérieur */
+    background-color: rgba(7, 3, 75, 0.755);
+    /* Couleur de fond avec transparence */
+    border-style: groove;
+    /* Style de bordure */
+    margin-right: 25px;
+    /* Marge à droite */
+    margin-top: 20px;
+    /* Marge en haut */
+}
+
+#acces {
+    display: flex;
+    /* Affichage en ligne */
+    align-items: center;
+    /* Alignement vertical */
+}
+
+#textcontact {
+    margin-bottom: 40px;
+    /* Marge en bas */
+    font-size: small;
+    /* Taille de police */
+}
+
+#messageresa {
+    width: 100%;
+    /* Largeur */
+}
+
+#messagecont {
+    width: 100%;
+    /* Largeur */
+}
+
+h2 {
+    font-size: xx-large;
+    /* Taille de police extra large */
+}
+
+/* Bouton de soumission du formulaire */
+#btnp2 {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #06162A;
+    border: solid 1px #e8530e;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+
+#btnp2:hover {
+    background-color: white;
+    border: solid 1px #06162A;
+    color: #06162A;
+}
+
+#adresse {
+    font-size: small;
+    /* Taille de police */
+    margin-left: 2%;
+    /* Marge à gauche */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    /* Affichage en ligne */
+    justify-content: center;
+    /* Répartition de l'espace autour des éléments */
+}
+
+#liens {
+    margin: 20px;
+    /* Marge */
+    color: #fff;
+    /* Couleur du texte */
+}
+
+.footerlink {
+    display: flex;
+    /* Affichage en ligne */
+    justify-content: space-evenly;
+    /* Répartition de l'espace autour des éléments */
+    width: 18%;
+    /* Largeur */
+    margin-bottom: 0.5%;
+    /* Marge en bas */
+}
+
+/* Bouton de retour en haut de page */
+#scrollToTopBtn {
+    display: none;
+    /* Masqué par défaut */
+    position: fixed;
+    /* Position fixe */
+    bottom: 20px;
+    /* Position par rapport au bas */
+    right: 20px;
+    /* Position par rapport à droite */
+    background-color: #007bff;
+    /* Couleur de fond */
+    color: #fff;
+    /* Couleur du texte */
+    border: none;
+    /* Pas de bordure */
+    border-radius: 50%;
+    /* Rayon de la bordure */
+    width: 50px;
+    /* Largeur */
+    height: 50px;
+    /* Hauteur */
+    font-size: 24px;
+    /* Taille de police */
+    cursor: pointer;
+    /* Curseur */
+    z-index: 1000;
+    /* Ordre de superposition */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+    /* Couleur de fond au survol */
+}
+
+/* Styles spécifiques à chaque media query */
+
+/* Desktop */
+@media only screen and (min-width: 1032px) {
+    #resa {
+        padding: 2%;
+        /* Espacement intérieur */
+        background-color: rgba(253, 253, 253, 0.252);
+        /* Couleur de fond avec transparence */
+        border-style: groove;
+        /* Style de bordure */
+        width: fit-content;
+        /* Ajustement à la taille du contenu */
+        margin-left: 25px;
+        /* Marge à gauche */
+        margin-right: 20px;
+        /* Marge à droite */
+    }
+}
+
+/* iPad Pro */
+@media only screen and (max-width: 1030px) {
+    #mainblock {
+        display: flex;
+        /* Affichage en ligne */
+        flex-direction: column;
+        /* Direction des éléments */
+        flex-wrap: wrap;
+        /* Enroulement des éléments */
+        justify-content: center;
+        /* Répartition de l'espace autour des éléments */
+    }
+
+    #resa {
+        padding: 2%;
+        /* Espacement intérieur */
+    }
+}
+
+/* iPad */
+@media screen and (max-width: 800px) {
+    #mainblock {
+        display: flex;
+        /* Affichage en ligne */
+        flex-direction: column;
+        /* Direction des éléments */
+        flex-wrap: wrap;
+        /* Enroulement des éléments */
+        justify-content: center;
+        /* Répartition de l'espace autour des éléments */
+    }
+
+    .header {
+        background-color: rgb(23, 23, 47);
+        /* Couleur de fond */
+    }
+
+    #resa {
+        padding: 2%;
+        /* Espacement intérieur */
+    }
+
+    #contact {
+        margin-right: 0;
+        /* Marge à droite */
+    }
+}
+
+/* iPhone 12 Pro et supérieur */
+@media screen and (max-width: 392px) {
+    #mainblock {
+        display: flex;
+        /* Affichage en ligne */
+        flex-direction: column;
+        /* Direction des éléments */
+        flex-wrap: wrap;
+        /* Enroulement des éléments */
+        justify-content: center;
+        /* Répartition de l'espace autour des éléments */
+        margin-top: 10px;
+        /* Marge en haut */
+        max-width: 100vw;
+        /* Largeur maximale */
+    }
+
+    #resa {
+        margin-right: 100px;
+        /* Marge à droite */
+        padding-right: 30px;
+        /* Espacement intérieur à droite */
+    }
+
+    #textresa {
+        margin-left: 12px;
+        /* Marge à gauche */
+        font-size: small;
+        /* Taille de police */
+    }
+
+    h2 {
+        margin-right: 95px;
+        /* Marge à droite */
+        margin-left: 12px;
+        /* Marge à gauche */
+    }
+
+    .header {
+        background-color: rgb(23, 23, 47);
+        /* Couleur de fond */
+    }
+
+    #contact {
+        padding-right: 30px;
+        /* Espacement intérieur à droite */
+        background-color: rgba(253, 253, 253, 0.252);
+        /* Couleur de fond avec transparence */
+        border-style: groove;
+        /* Style de bordure */
+        margin-right: 100px;
+        /* Marge à droite */
+        margin-top: 20px;
+        /* Marge en haut */
+        width: 100vw;
+        /* Largeur */
+    }
+
+    #textcontact {
+        margin-left: 12px;
+        /* Marge à gauche */
+        font-size: small;
+        /* Taille de police */
+    }
+
+    #formcontact {
+        padding-left: 10px;
+        /* Espacement intérieur à gauche */
+    }
+
+    #messageresa {
+        width: 100%;
+        /* Largeur */
+    }
+
+    #messagecont {
+        width: 100%;
+        /* Largeur */
+    }
+
+    #formresa {
+        padding-left: 10px;
+        /* Espacement intérieur à gauche */
+    }
+
+    #acces {
+        display: flex;
+        /* Affichage en ligne */
+        flex-direction: column;
+        /* Direction des éléments */
+        align-items: flex-start;
+        /* Alignement des éléments à gauche */
+        padding-left: 10px;
+        /* Espacement intérieur à gauche */
+    }
+
+    #adresse {
+        margin: 0;
+        /* Marge */
+        width: 100%;
+        /* Largeur */
+    }
+
+    .cookie-container>p {
+        padding: 10px;
+        /* Espacement intérieur */
+    }
+
+    .cookie-icon {
+        width: 40px;
+        /* Largeur */
+        height: 40px;
+        /* Hauteur */
+        margin-right: 10px;
+        /* Marge à droite */
+        vertical-align: middle;
+        /* Alignement vertical */
+    }
+}

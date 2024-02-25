@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="assets/css/style.css" id="theme" />
+  <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/img/apple-touch-icon.png" />
+  <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/img/favicon-32x32.png" />
+  <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="assets/img/favicon-16x16.png" />
+  <script
+          src="https://kit.fontawesome.com/84b771f314.js"
+          crossorigin="anonymous"></script>
+  <title>THE LION CLUB</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand"> THE LION CLUB</a>
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+      <div class="menu" id="menu">
+        <ul class="menu-inner">
+          <li class="menu-item">
+            <a href="index.html" class="menu-link">Accueil</a>
+          </li>
+          <li class="menu-item">
+            <a href="#room" class="menu-link">Nos salles</a>
+          </li>
+          <li class="menu-item">
+            <a href="pages/réservations.html" class="menu-link">Réservation</a>
+          </li>
+          <li class="menu-item">
+            <a href="pages/réservations.html" class="menu-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <label for="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i></label>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="">
+    <section class="section banner banner-section">
+      <div class="container banner-column">
+        <img
+             id="logoAnimation"
+             class="banner-image"
+             data-aos="zoom-out-up"
+             src="assets/img/LionClub_logo.png"
+             alt="banner" />
+        <div class="banner-inner" data-aos="fade-down-right">
+          <h1 class="heading-xl">THE LION CLUB</h1>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            facere ipsum necessitatibus nam laudantium rerum ad soluta maiores
+            eligendi ea perferendis a laboriosam natus vel libero, nemo illo
+            distinctio dolores quisquam quia error quidem suscipit officia.
+            Magnam, iusto et! Quam nulla perferendis optio quia magnam tempora
+            quidem quas adipisci magni.
+          </p>
+        </div>
+      </div>
+      <div id="rebour">
+        <h2 id="titleEvent">Ouverture le 01 Juillet 2024</h2>
+
+        <div id="boxRebours">
+          <div class="box">
+            <div id="day">00</div>
+            <p id="day_label">Jours</p>
+          </div>
+          <div class="box">
+            <div id="hours">00</div>
+            <p id="hours_label">Heures</p>
+          </div>
+          <div class="box">
+            <div id="minute">00</div>
+            <p id="minute_label">Minutes</p>
+          </div>
+          <div class="box">
+            <div id="second">00</div>
+            <p id="second_label">Secondes</p>
+          </div>
+        </div>
+      </div>
+      <section id="resaStyle">
+        <div id="BookingBtn">
+          <div class="nightEvents">
+            <h3>Soirée Salsa</h3>
+            <button id="btnModal1" class="modal-btn modal-trigger">
+              Réserver
+            </button>
+          </div>
+          <div class="nightEvents">
+            <h3>Soirée Funk</h3>
+            <button id="btnModal2" class="modal-btn modal-trigger">
+              Réserver
+            </button>
+          </div>
+          <div class="nightEvents">
+            <h3>Soirée House</h3>
+            <button id="btnModal3" class="modal-btn modal-trigger">
+              Réserver
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <div id="modalContainer" class="modal-container">
+        <div class="overlay modal-trigger"></div>
+        <div class="modal">
+          <span class="close-modal modal-trigger"> &times; </span>
+          <h3>Réservez votre soirée</h3>
+          <form>
+            <label for="lastName"> Nom : </label>
+            <input
+                   type="text"
+                   name="lastName"
+                   id="lastName"
+                   placeholder="Votre Nom"
+                   required />
+            <label for="firstName"> Prénom : </label>
+            <input
+                   type="text"
+                   name="firstName"
+                   id="firstName"
+                   placeholder="Votre Prénom"
+                   required />
+            <label for="email"> Email : </label>
+            <input
+                   type="email"
+                   name="mail"
+                   id="mail"
+                   placeholder="Votre addresse email"
+                   required />
+            <div>
+              <div>
+                <label for="message"> Message :</label>
+              </div>
+              <div>
+                <textarea
+                          name="message"
+                          id="message"
+                          cols="30"
+                          rows="10"
+                          maxlength="300"
+                          placeholder="Ecrivez votre message"></textarea>
+              </div>
+
+              <div>
+                <input id="btnSubmit" type="submit" value="Envoyer" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="dj">
+      <div id="titletDj">
+        <h2>Nos DJ Résidants</h2>
+      </div>
+
+      <div id="listDj">
+        <div class="card" data-aos="fade-right">
+          <img
+               src="assets/img/dj_l.jpg"
+               alt="animateur soirée musicale, boîte de nuit, dance" />
+          <h3>DJ INFINITIX</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            accusantium vel eveniet inventore dolorum quos, reprehenderit
+            harum eius ex, perferendis ab aliquid tempore autem magnam.
+          </p>
+        </div>
+        <div class="card" data-aos="fade-down">
+          <img
+               src="assets/img/dj_m.jpg"
+               alt="animateur soirée musicale, boîte de nuit" />
+          <h3>DJ PULSE</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+            repudiandae architecto, nisi illum distinctio quae? Enim,
+            recusandae deleniti! Soluta explicabo quis officiis ducimus dicta
+            adipisci.
+          </p>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img
+               src="assets/img/dj_r.jpg"
+               alt="animateur soirée musicale, boîte de nuit" />
+          <h3>DJ SONATO</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
+            asperiores sunt. Doloremque quisquam autem rem accusamus eveniet,
+            vitae voluptas nobis distinctio nesciunt deserunt quaerat quidem?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="video-wrapper">
+        <video playsinline autoplay muted loop>
+          <source src="assets/video/Render.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <section>
+      <div class="description panel blue">
+        <div id="room">
+          <h2>Nos differentes Salles</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur placeat ipsam nemo facilis fugiat, perspiciatis
+            repellat assumenda commodi provident corrupti. Error et ut
+            voluptate deleniti illum sed doloribus, quos harum fuga commodi
+            provident eos aperiam amet optio magni dignissimos consectetur
+            necessitatibus qui laudantium possimus incidunt molestias
+            reiciendis. Quae ea doloremque repellendus quas eaque eos sunt,
+            obcaecati recusandae asperiores pariatur, consectetur temporibus
+            error necessitatibus veritatis doloribus iste iusto provident
+            ipsum, accusantium perferendis totam dignissimos minus? Molestiae
+            minus placeat porro temporibus consequatur, illo ratione voluptas
+            voluptatem. Doloribus fugit itaque sint, corrupti officia sequi,
+            ex at ad optio ipsa illum dicta quasi adipisci!
+          </p>
+        </div>
+      </div>
+
+      <div class="container" id="right">
+        <section class="panel red">
+          <img
+               src="assets/img/Lounge_Room.jpg"
+               alt="salle avec boxes privatif, confortables avec lumière tamisée et bar atténuant" />
+        </section>
+        <section class="panel orange">
+          <img
+               src="assets/img/Lounge_Bar_2.jpg"
+               alt="salle avec canapés, lumière tamisées violettes et bar illuminé doré ambiance chillout" />
+        </section>
+        <section class="panel purple">
+          <img
+               src="assets/img/dance_floor_violet.jpg"
+               alt="salle avec boxes privatif, confortables avec lumière tamisée et bar atténuant" />
+        </section>
+        <section class="panel green">
+          <img
+               src="assets/img/Lounge_Bar_3.jpg"
+               alt="salle intimiste lumière tamisée, soirées privatisées" />
+        </section>
+        <section class="panel gray">
+          <img
+               src="assets/img/Lounge_Bar.jpg"
+               alt="grande salle d’étage supérieur avec fauteuils et canapés vue panoramique, lumière tamisée" />
+        </section>
+      </div>
+    </section>
+
+    <section id="carrouselPicture">
+      <div id="galTitle">
+        <h1>Galerie</h1>
+      </div>
+      <div class="container">
+        <div class="card-carousel">
+          <div class="card" id="">
+            <div class="image-container"></div>
+          </div>
+          <div class="card" id="">
+            <div class="image-container"></div>
+          </div>
+          <div class="card" id="">
+            <div class="image-container"></div>
+          </div>
+          <div class="card" id="">
+            <div class="image-container"></div>
+          </div>
+          <div class="card" id="">
+            <div class="image-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <img
+           id="logoFooter"
+           src="assets/img/LionClub_logo.png"
+           alt="logo du club" />
+      <div class="social-iconsF">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div id="legal">
+        <a href="#">Mentions Légales</a>
+        <a href="#">C.G.V</a>
+        <a href="#">Copyright La Manu</a>
+      </div>
+    </section>
+  </footer>
+  <div>
+    <button id="scrollToTopBtn">&#8593;</button>
+  </div>
+  <div id="cookie-message" class="cookie-container">
+    <p>
+      Nous utilisons des cookies pour vous offrir la meilleure expérience
+      possible sur notre site web. En continuant à utiliser ce site, vous
+      acceptez notre utilisation des cookies.
+    </p>
+    <img
+         src="assets/img/cookie_nuit.png"
+         alt="Cookie Icon"
+         class="cookie-icon" />
+    <button id="refuse-cookie-btn" onclick="refuseCookies()">Refuser</button>
+    <button id="accept-cookie-btn" onclick="acceptCookies()">Accepter</button>
+    <img
+         src="assets/img/cookie_nuit.png"
+         alt="Cookie Icon"
+         class="cookie-icon" />
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
